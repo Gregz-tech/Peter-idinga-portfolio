@@ -9,7 +9,7 @@ const socialLinks = [
     displayName: "Let's Connect",
     subText: "on LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/in/your-profile", // Update this with your actual LinkedIn URL
+    url: "https://www.linkedin.com/in/peter-idinga",
     color: "#0A66C2",
     gradient: "from-[#0A66C2] to-[#0077B5]",
     isPrimary: true,
@@ -19,7 +19,7 @@ const socialLinks = [
     displayName: "Github",
     subText: "@Gregztech",
     icon: Github,
-    url: "https://github.com/Gregztech",
+    url: "https://github.com/Gregz-tech",
     color: "#ffffff",
     gradient: "from-[#333] to-[#24292e]",
     isPrimary: false,
@@ -29,7 +29,7 @@ const socialLinks = [
     displayName: "Email Me",
     subText: "Get in touch via Email",
     icon: Mail,
-    url: "mailto:your-email@gmail.com", // Update this with your actual Email
+    url: "peteridinga@gmail.com",
     color: "#EA4335",
     gradient: "from-[#EA4335] to-[#4285F4]",
     isPrimary: false,
