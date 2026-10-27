@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://peter-idinga.netlify.app/sitemap.xml

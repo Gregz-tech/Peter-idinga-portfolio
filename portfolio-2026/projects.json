@@ -1,0 +1,210 @@
+[
+  {
+    "slug": "ceavox",
+    "name": "CEAVOX",
+    "industry": "Events & participation",
+    "role": "Full-stack development",
+    "url": "https://ceavox.com",
+    "summary": "Voting, elections and tickets in one place.",
+    "desc": "An event platform bringing award voting, elections and ticketing into one digital experience.",
+    "color": "#d6e96b",
+    "dark": "#252b19",
+    "label": "Voting / Elections / Ticketing",
+    "challenge": "Events bring different people into the same experience: organisers setting things up, participants registering and audiences voting or reserving a place. Each needs a clear route through the product.",
+    "contribution": "I worked across the frontend and backend, connecting public participation journeys with the application logic and organiser tools behind them.",
+    "decisions": [
+      [
+        "Different events, clear journeys",
+        "Award voting, elections and ticketing have distinct flows. The product brings them together while allowing each event type to work in its own way."
+      ],
+      [
+        "Connected experiences",
+        "Public event pages and organiser workflows belong to the same product, so the work extends beyond the landing page into the interactions that follow."
+      ]
+    ],
+    "journeys": [
+      "Discover an event",
+      "Explore its details",
+      "Vote, register or get a ticket"
+    ],
+    "tech": [
+      "React",
+      "Convex",
+      "Clerk",
+      "Paystack",
+      "Flutterwave",
+      "Netlify"
+    ],
+    "outcome": "A live product spanning three event formats. The public event discovery interface is shown here; visit the website to explore current events.",
+    "screens": [
+      {
+        "asset": "ceavox-home",
+        "title": "The public introduction",
+        "caption": "A bold landing page introduces voting, elections and ticketing, with clear routes to create or discover an event.",
+        "width": 1348,
+        "height": 926
+      },
+      {
+        "asset": "ceavox-explore",
+        "title": "Finding an event",
+        "caption": "The discovery screen brings search, trending events and browsing filters into one place.",
+        "width": 1348,
+        "height": 926
+      }
+    ]
+  },
+  {
+    "slug": "hearintel",
+    "name": "HearIntel",
+    "industry": "Healthcare & data",
+    "role": "Full-stack development",
+    "url": "https://hearintel.com.ng",
+    "summary": "Clinical care and hearing-health data.",
+    "desc": "An audiology platform connecting clinical patient management with a national hearing-health registry.",
+    "color": "#b6cfc0",
+    "dark": "#1d3830",
+    "label": "Clinical software / Registry",
+    "challenge": "Clinical teams need tools for individual patient care, while a registry serves a different purpose: understanding patterns in hearing health. The platform needs to support both without confusing their users or information access.",
+    "contribution": "I worked across the clinical and registry interfaces and their supporting backend, including data workflows, authentication, permissions and deployment.",
+    "decisions": [
+      [
+        "Two modules, distinct purposes",
+        "The patient management module supports clinical workflows. The registry is designed to expose authorised aggregate or de-identified information, rather than patient care records."
+      ],
+      [
+        "Access shaped by responsibilities",
+        "Roles and facility membership guide which parts of the platform a user can access. Clinical information and registry views follow distinct permission boundaries."
+      ]
+    ],
+    "journeys": [
+      "Enter the appropriate module",
+      "Access authorised workflows",
+      "Work with the relevant information"
+    ],
+    "tech": [
+      "React",
+      "Supabase",
+      "PostgreSQL",
+      "Render",
+      "Vercel"
+    ],
+    "outcome": "A live audiology platform with a public introduction to its clinical and registry modules. This case study uses only the public landing page.",
+    "screens": [
+      {
+        "asset": "hearintel-home",
+        "title": "The first impression",
+        "caption": "The public website introduces the platform and helps visitors find the right workspace.",
+        "width": 1348,
+        "height": 810
+      },
+      {
+        "asset": "hearintel-platform",
+        "title": "Two connected workspaces",
+        "caption": "The public platform overview explains clinical patient management and the separate registry purpose.",
+        "width": 1280,
+        "height": 1305
+      },
+      {
+        "asset": "hearintel-registry",
+        "title": "The wider picture",
+        "caption": "The public registry introduction describes authorised aggregate and de-identified reporting. No patient records are shown.",
+        "width": 1280,
+        "height": 690
+      }
+    ]
+  },
+  {
+    "slug": "qprep",
+    "name": "QPrep",
+    "industry": "Education",
+    "role": "Full-stack development",
+    "url": "https://qprep.com.ng",
+    "summary": "A home for academic past questions.",
+    "desc": "An academic past-question repository, with a signed-in experience for accessing study materials.",
+    "color": "#b6c6ed",
+    "dark": "#243045",
+    "label": "Education / Academic resources",
+    "challenge": "Past-question materials need a useful place to live, with an interface that helps students orient themselves around their academic resources.",
+    "contribution": "I handled full-stack development, working on both the visible interface and the application behind the education project.",
+    "decisions": [
+      [
+        "An academic focus",
+        "QPrep centres on academic past questions, with course information providing context for its study resources."
+      ],
+      [
+        "A connected application",
+        "The sign-in interface provides a focused entry point to the repository, with a consistent visual identity across its account controls."
+      ]
+    ],
+    "journeys": [
+      "Open QPrep",
+      "Sign in to the repository",
+      "Access academic resources"
+    ],
+    "tech": [],
+    "outcome": "A live academic past-question repository. The sign-in page provides the entry point to its education experience.",
+    "screens": [
+      {
+        "asset": "qprep-login",
+        "title": "Returning to the repository",
+        "caption": "A focused sign-in screen provides the entry point to QPrep.",
+        "width": 1363,
+        "height": 936
+      },
+      {
+        "asset": "qprep-register",
+        "title": "Creating an academic profile",
+        "caption": "The public registration interface gathers academic context, including institution and level. The form is shown empty; no account was created.",
+        "width": 1363,
+        "height": 936
+      }
+    ]
+  },
+  {
+    "slug": "safenest",
+    "name": "Safe Nest",
+    "industry": "Housing & property",
+    "role": "Frontend development",
+    "url": "https://safenest.ng",
+    "summary": "A housing brand, introduced online.",
+    "desc": "A housing and renting website introducing a brand built around renting independence.",
+    "color": "#b1c5ff",
+    "dark": "#243354",
+    "label": "Housing / Web experience",
+    "challenge": "The first interaction with a housing brand needs to introduce its purpose clearly and offer an obvious next step, including on a phone.",
+    "contribution": "I developed the public-facing website experience, with attention to the interface, responsive layouts and how visitors move through the site.",
+    "decisions": [
+      [
+        "A clear first impression",
+        "The opening screen combines a strong housing message, city imagery and a prominent call to action."
+      ],
+      [
+        "An interface that travels",
+        "Responsive presentation makes the brand introduction and navigation usable across different screen sizes."
+      ]
+    ],
+    "journeys": [
+      "Meet the housing brand",
+      "Understand the proposition",
+      "Follow the next step"
+    ],
+    "tech": [],
+    "outcome": "A live housing and renting website, with a clear brand introduction and a direct next step for visitors.",
+    "screens": [
+      {
+        "asset": "safenest-home",
+        "title": "A clear route into renting",
+        "caption": "The public homepage combines city imagery, a brand introduction and a search interface. My contribution was frontend development.",
+        "width": 1348,
+        "height": 995
+      },
+      {
+        "asset": "safenest-coliving",
+        "title": "Introducing shared living",
+        "caption": "A dedicated section uses imagery and a direct next step to explain the co-living offering.",
+        "width": 1348,
+        "height": 640
+      }
+    ]
+  }
+]
