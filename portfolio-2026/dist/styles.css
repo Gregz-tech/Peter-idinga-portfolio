@@ -23,3 +23,25 @@ body{background:var(--bg)}.site-header{height:105px;position:relative;z-index:5}
 .brand-logo{width:228px;height:auto;mix-blend-mode:screen}.menu-top{align-items:center;gap:16px}.menu-logo{display:block;background:#111214;padding:15px 12px;max-width:235px}.menu-logo img{width:100%;height:auto}.site-header .brand{flex-shrink:0}
 @media(max-width:600px){.brand-logo{width:193px}.menu-logo{max-width:220px;padding:14px 10px}.menu-close{white-space:nowrap}}
 .site-header{mix-blend-mode:lighten}
+
+
+/* Engineering case studies — evidence before decoration. */
+.project-highlights{list-style:none;display:flex;flex-wrap:wrap;gap:7px 14px;margin:15px 0 0;padding:0}
+.project-highlights li{font-size:11px;line-height:1.5;color:#d5d8ca;position:relative;padding-left:12px}
+.project-highlights li:before{content:"";position:absolute;left:0;top:.58em;width:5px;height:5px;background:var(--accent);border-radius:50%}
+.secondary .project-highlights{margin-top:14px}
+.engineering{padding-top:85px;padding-bottom:75px;border-top:1px solid var(--line)}
+.engineering-heading{max-width:790px;margin-bottom:44px}
+.engineering-heading .eyebrow{color:var(--accent)}
+.engineering-heading h2{font-size:clamp(36px,4.9vw,62px);line-height:1.08;margin:17px 0 17px}
+.engineering-heading p{font-size:15px;line-height:1.8;max-width:680px}
+.engineering-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.engineering-group{background:var(--panel);padding:28px 27px 29px;border:1px solid #373b31;min-width:0}
+.engineering-group h3{font-size:21px;line-height:1.3;letter-spacing:-.04em;min-height:55px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.engineering-group ul{list-style:none;padding:10px 0 0;margin:0}
+.engineering-group li{color:var(--muted);font-size:13px;line-height:1.75;padding:13px 0 13px 18px;position:relative;border-bottom:1px solid #ffffff0e;overflow-wrap:anywhere}
+.engineering-group li:last-child{border-bottom:0}
+.engineering-group li:before{content:"↗";position:absolute;left:0;color:var(--accent);font-size:12px}
+.case-details{padding-top:45px}
+@media(max-width:900px){.engineering-grid{grid-template-columns:1fr 1fr}.engineering-group:last-child{grid-column:1/-1}.engineering{padding-top:65px;padding-bottom:50px}}
+@media(max-width:600px){.project-info{gap:18px}.project-highlights{gap:7px 12px}.project-highlights li{font-size:10px}.engineering-grid{grid-template-columns:1fr;gap:12px}.engineering-group:last-child{grid-column:auto}.engineering-group{padding:23px 21px}.engineering-group h3{min-height:0;font-size:21px}.engineering-heading{margin-bottom:28px}.engineering-heading p{font-size:13px}.engineering{padding-top:48px;padding-bottom:40px}.case-details{padding-top:35px}}
