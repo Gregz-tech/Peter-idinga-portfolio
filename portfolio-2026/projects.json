@@ -5,37 +5,49 @@
     "industry": "Events & participation",
     "role": "Full-stack development",
     "url": "https://ceavox.com",
-    "summary": "Voting, elections and tickets in one place.",
-    "desc": "An event platform bringing award voting, elections and ticketing into one digital experience.",
+    "summary": "I engineered event workflows that connect registration, voting, ticketing, payments and organiser operations.",
+    "desc": "A multi-module events platform for elections, award voting and ticketed experiences, with connected participant, organiser and administrative workflows.",
     "color": "#d6e96b",
     "dark": "#252b19",
     "label": "Voting / Elections / Ticketing",
-    "challenge": "Events bring different people into the same experience: organisers setting things up, participants registering and audiences voting or reserving a place. Each needs a clear route through the product.",
-    "contribution": "I worked across the frontend and backend, connecting public participation journeys with the application logic and organiser tools behind them.",
+    "challenge": "An event is not just a page or checkout button. Registration, eligibility, payment status, voting, ticket delivery, check-in and organiser balances have to connect across several user roles and event formats.",
+    "contribution": "Full-stack engineering across React/TypeScript interfaces and a Convex backend: event configuration, participation flows, payment integrations, webhook handling, transactional email, ticketing, organiser tools and finance-facing workflows.",
     "decisions": [
       [
-        "Different events, clear journeys",
-        "Award voting, elections and ticketing have distinct flows. The product brings them together while allowing each event type to work in its own way."
+        "One platform, different event engines",
+        "Built distinct experiences for elections, award voting and ticketing while sharing event setup, public discovery and organiser tooling."
       ],
       [
-        "Connected experiences",
-        "Public event pages and organiser workflows belong to the same product, so the work extends beyond the landing page into the interactions that follow."
+        "Money needs its own lifecycle",
+        "Connected payment initiation, callback and webhook paths with transaction records, verification and reconciliation logic rather than treating payment as a visual success screen."
+      ],
+      [
+        "From purchase to gate check-in",
+        "Linked ticket issuance, QR/reference lookup and attendance workflows so ticket status can be checked against backend event records."
+      ],
+      [
+        "Tools for the people running events",
+        "Implemented organiser-facing configuration, participant management, transaction views and operational actions alongside the public participant experience."
       ]
     ],
     "journeys": [
-      "Discover an event",
-      "Explore its details",
-      "Vote, register or get a ticket"
+      "Organiser configures and publishes an event",
+      "Participant registers, votes or obtains a ticket",
+      "Platform processes results, payments and notifications",
+      "Organiser manages attendance and financial activity"
     ],
     "tech": [
       "React",
+      "TypeScript",
+      "Vite",
       "Convex",
       "Clerk",
       "Paystack",
       "Flutterwave",
+      "Resend",
       "Netlify"
     ],
-    "outcome": "A live product spanning three event formats. The public event discovery interface is shown here; visit the website to explore current events.",
+    "outcome": "An operating events platform with interconnected public experiences and substantial internal systems. This case study illustrates engineering scope; individual production workflows remain subject to ongoing verification and improvement.",
     "screens": [
       {
         "asset": "ceavox-home",
@@ -51,6 +63,37 @@
         "width": 1348,
         "height": 926
       }
+    ],
+    "highlights": [
+      "Payments & webhooks",
+      "Voting and e-ticketing",
+      "Organiser and admin systems"
+    ],
+    "implementation": [
+      {
+        "heading": "Frontend & event experiences",
+        "items": [
+          "React/TypeScript event discovery, event pages and organiser-facing dashboards.",
+          "Event creation and configuration interfaces spanning elections, award voting and ticketed events.",
+          "Contestant, voter and attendee registration flows, moderation interfaces and result views."
+        ]
+      },
+      {
+        "heading": "Backend, integrations & automation",
+        "items": [
+          "Convex queries, mutations and actions connecting event state, participation records and role-aware workflows.",
+          "Payment-gateway integrations including Paystack and Flutterwave-related flows; webhook verification and reconciliation pathways.",
+          "Resend-powered transactional email workflows, QR-coded e-ticket issuance and backend-driven gate validation."
+        ]
+      },
+      {
+        "heading": "Operations & financial systems",
+        "items": [
+          "Transaction history, export and financial visibility for organisers and system administrators.",
+          "Commission, balance, withdrawal and payout-request workflows, with finance states handled separately from public UI.",
+          "Automated jobs, approval flows, test coverage and production-oriented error and retry handling across connected features."
+        ]
+      }
     ]
   },
   {
@@ -59,36 +102,47 @@
     "industry": "Healthcare & data",
     "role": "Full-stack development",
     "url": "https://hearintel.com.ng",
-    "summary": "Clinical care and hearing-health data.",
-    "desc": "An audiology platform connecting clinical patient management with a national hearing-health registry.",
+    "summary": "I built clinical workflows and data systems spanning audiology patient management and registry operations.",
+    "desc": "A full-stack audiology platform comprising a clinical patient-management system and a separately governed hearing-health registry.",
     "color": "#b6cfc0",
     "dark": "#1d3830",
     "label": "Clinical software / Registry",
-    "challenge": "Clinical teams need tools for individual patient care, while a registry serves a different purpose: understanding patterns in hearing health. The platform needs to support both without confusing their users or information access.",
-    "contribution": "I worked across the clinical and registry interfaces and their supporting backend, including data workflows, authentication, permissions and deployment.",
+    "challenge": "Clinical software must support detailed patient encounters while keeping facilities, staff responsibilities and registry reporting separate. The difficult part is modelling those workflows and access boundaries across UI, API and database.",
+    "contribution": "Full-stack work across React interfaces, backend APIs and PostgreSQL/Supabase data services, including patient and facility workflows, clinical assessment modules, permissions, reporting surfaces and deployment.",
     "decisions": [
       [
-        "Two modules, distinct purposes",
-        "The patient management module supports clinical workflows. The registry is designed to expose authorised aggregate or de-identified information, rather than patient care records."
+        "Two products, two responsibilities",
+        "Separated clinic-level patient operations from national/state-level registry reporting so the interface and data access follow different purposes."
       ],
       [
-        "Access shaped by responsibilities",
-        "Roles and facility membership guide which parts of the platform a user can access. Clinical information and registry views follow distinct permission boundaries."
+        "Clinical detail without UI chaos",
+        "Developed structured audiology assessment and management experiences that move across several clinical modules and patient encounters."
+      ],
+      [
+        "Facility- and role-aware access",
+        "Implemented interfaces and supporting access flows for clinic staff, administrators and authorised users across distinct organisational contexts."
+      ],
+      [
+        "Operational continuity",
+        "Connected appointment, worklist, records and reporting surfaces with supporting APIs, deployment environments and backend checks."
       ]
     ],
     "journeys": [
-      "Enter the appropriate module",
-      "Access authorised workflows",
-      "Work with the relevant information"
+      "Facility or authorised staff member signs in",
+      "Clinician works through an audiology encounter",
+      "Records, assessments and reports remain in the appropriate clinical workspace",
+      "Authorised registry users access their distinct reporting workflows"
     ],
     "tech": [
       "React",
+      "JavaScript",
       "Supabase",
       "PostgreSQL",
+      "REST APIs",
       "Render",
       "Vercel"
     ],
-    "outcome": "A live audiology platform with a public introduction to its clinical and registry modules. This case study uses only the public landing page.",
+    "outcome": "A live healthcare software project with rich clinical and operational functionality. Registry analytics and some sensitive clinical workflows are still undergoing governance and production-readiness work; no patient information is displayed in this portfolio.",
     "screens": [
       {
         "asset": "hearintel-home",
@@ -111,6 +165,37 @@
         "width": 1280,
         "height": 690
       }
+    ],
+    "highlights": [
+      "Clinical patient workflows",
+      "Facility roles and access",
+      "Registry data architecture"
+    ],
+    "implementation": [
+      {
+        "heading": "Clinical product engineering",
+        "items": [
+          "Patient registration, clinical worklists, appointments, longitudinal records and visit-management interfaces.",
+          "Audiology-specific assessments including otoscopy, pure-tone audiometry, speech and immittance-related workflows.",
+          "Clinical conclusions, hearing-care documentation, reports and record navigation across patient encounters."
+        ]
+      },
+      {
+        "heading": "Backend & data systems",
+        "items": [
+          "React frontend integration with backend API services hosted on Render and PostgreSQL services through Supabase.",
+          "Facility onboarding, staff roles, tenant-aware access paths and private patient-data handling mechanisms.",
+          "Shared underlying data concepts with separately governed PMS and registry responsibilities."
+        ]
+      },
+      {
+        "heading": "Registry, quality & deployment",
+        "items": [
+          "Registry onboarding, facility and administration interfaces plus regional hearing-health reporting foundations.",
+          "Audit-oriented workflows, review states and privacy-conscious approaches to patient-derived reporting.",
+          "Frontend deployment on Vercel, backend deployment on Render and automated UI/backend verification efforts."
+        ]
+      }
     ]
   },
   {
@@ -119,30 +204,45 @@
     "industry": "Education",
     "role": "Full-stack development",
     "url": "https://qprep.com.ng",
-    "summary": "A home for academic past questions.",
-    "desc": "An academic past-question repository, with a signed-in experience for accessing study materials.",
+    "summary": "I developed a study-resource platform with accounts, academic metadata, file storage and moderation workflows.",
+    "desc": "An academic past-question repository with student access, structured course materials, file-management workflows and administrative tools.",
     "color": "#b6c6ed",
     "dark": "#243045",
     "label": "Education / Academic resources",
-    "challenge": "Past-question materials need a useful place to live, with an interface that helps students orient themselves around their academic resources.",
-    "contribution": "I handled full-stack development, working on both the visible interface and the application behind the education project.",
+    "challenge": "A useful past-question repository needs more than PDF links. Students need relevant course material; uploads need consistent metadata; and moderators need a process to review resources before publication.",
+    "contribution": "Full-stack development spanning public account screens, student resource views, administrative interfaces, Convex data functions, file storage, course metadata and upload-review flows.",
     "decisions": [
       [
-        "An academic focus",
-        "QPrep centres on academic past questions, with course information providing context for its study resources."
+        "Organise around real academic context",
+        "Structured papers around institution, department, level, course, semester and session details so materials can be presented in a useful academic context."
       ],
       [
-        "A connected application",
-        "The sign-in interface provides a focused entry point to the repository, with a consistent visual identity across its account controls."
+        "Separate raw uploads from published material",
+        "Modelled a review queue for newly uploaded PDFs and a distinct published-material catalogue instead of publishing every upload immediately."
+      ],
+      [
+        "Build tooling for academic administrators",
+        "Developed student-facing screens alongside management views for reviewing, creating and removing course materials."
+      ],
+      [
+        "Connect the files to the data",
+        "Used generated upload URLs and storage identifiers to associate uploaded files with searchable academic records."
       ]
     ],
     "journeys": [
-      "Open QPrep",
-      "Sign in to the repository",
-      "Access academic resources"
+      "Student creates an academic account",
+      "Student browses relevant study materials",
+      "Contributor or staff user submits a resource",
+      "Moderator reviews and publishes material to the catalogue"
     ],
-    "tech": [],
-    "outcome": "A live academic past-question repository. The sign-in page provides the entry point to its education experience.",
+    "tech": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Convex",
+      "File Storage"
+    ],
+    "outcome": "A live academic resource project with substantial data and upload-management code behind the public registration screens. Some administrative and permission paths require continued hardening; no unverified user-growth metrics are claimed.",
     "screens": [
       {
         "asset": "qprep-login",
@@ -158,6 +258,37 @@
         "width": 1363,
         "height": 936
       }
+    ],
+    "highlights": [
+      "Student accounts",
+      "Document storage & cataloguing",
+      "Moderation and publishing"
+    ],
+    "implementation": [
+      {
+        "heading": "Student experience",
+        "items": [
+          "Sign-in, registration and profile interfaces with academic context and repository navigation.",
+          "Past-question and study-material browsing organised by course, level and department.",
+          "Document views and saved-resource experiences represented across the frontend code."
+        ]
+      },
+      {
+        "heading": "Backend & file management",
+        "items": [
+          "Convex queries and mutations for paper records, metadata, retrieval and file references.",
+          "Generated upload URLs and stored document identifiers for PDF/resource uploads.",
+          "Bulk and multi-department material publishing paths with course and semester classification."
+        ]
+      },
+      {
+        "heading": "Moderation & administration",
+        "items": [
+          "Raw-upload review queues and pending-material management interfaces.",
+          "Administrator publishing, deletion and catalogue-management functionality.",
+          "Role concepts for students, moderators and super-admins, with academic scopes represented in the data model."
+        ]
+      }
     ]
   },
   {
@@ -166,30 +297,47 @@
     "industry": "Housing & property",
     "role": "Frontend development",
     "url": "https://safenest.ng",
-    "summary": "A housing brand, introduced online.",
-    "desc": "A housing and renting website introducing a brand built around renting independence.",
+    "summary": "I built rental-platform interfaces across tenant journeys, landlord operations and connected payments.",
+    "desc": "A multi-role property-rental frontend for tenants and landlords, integrated with a separately maintained backend API.",
     "color": "#b1c5ff",
     "dark": "#243354",
     "label": "Housing / Web experience",
-    "challenge": "The first interaction with a housing brand needs to introduce its purpose clearly and offer an obvious next step, including on a phone.",
-    "contribution": "I developed the public-facing website experience, with attention to the interface, responsive layouts and how visitors move through the site.",
+    "challenge": "A rental platform has long, stateful journeys: discovering homes, applying, reviewing applications and paying. Each role needs a clear experience that handles real API responses, loading states and failures.",
+    "contribution": "Frontend engineering for a React-based property platform: responsive tenant and landlord flows, API integration, authentication screens, rental applications, payment UI and reusable dashboard components. The backend was maintained separately.",
     "decisions": [
       [
-        "A clear first impression",
-        "The opening screen combines a strong housing message, city imagery and a prominent call to action."
+        "Different interfaces for different roles",
+        "Built role-specific React routes and dashboards for tenants and landlords instead of forcing every task into one generic interface."
       ],
       [
-        "An interface that travels",
-        "Responsive presentation makes the brand introduction and navigation usable across different screen sizes."
+        "Applications are guided journeys",
+        "Implemented multi-step interfaces for rental applications and property creation/editing, including validation, progress and status feedback."
+      ],
+      [
+        "Make external APIs usable",
+        "Connected Axios-based client services and defensive response handling to a backend maintained by another developer."
+      ],
+      [
+        "Payments need clear states",
+        "Built frontend payment initiation, callback and status interfaces around backend-controlled Flutterwave flows."
       ]
     ],
     "journeys": [
-      "Meet the housing brand",
-      "Understand the proposition",
-      "Follow the next step"
+      "Tenant discovers a property",
+      "Tenant applies and follows application status",
+      "Landlord manages properties and applications",
+      "Payment screens connect to the existing backend's payment flow"
     ],
-    "tech": [],
-    "outcome": "A live housing and renting website, with a clear brand introduction and a direct next step for visitors.",
+    "tech": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "Axios",
+      "Flutterwave",
+      "Vercel"
+    ],
+    "outcome": "A multifaceted rental frontend with live API-connected tenant and landlord flows. Backend ownership belongs to another developer; certain admin, messaging and analytics screens remain prototypes rather than completed services.",
     "screens": [
       {
         "asset": "safenest-home",
@@ -204,6 +352,37 @@
         "caption": "A dedicated section uses imagery and a direct next step to explain the co-living offering.",
         "width": 1348,
         "height": 640
+      }
+    ],
+    "highlights": [
+      "Tenant & landlord dashboards",
+      "API-connected rental journeys",
+      "Flutterwave payment UI"
+    ],
+    "implementation": [
+      {
+        "heading": "Tenant experience",
+        "items": [
+          "Property discovery, listing details and application interfaces, including multi-step form handling.",
+          "Tenant dashboards, application-status screens and transaction/payment views.",
+          "Responsive layouts, loading skeletons, error feedback and reusable property components."
+        ]
+      },
+      {
+        "heading": "Landlord experience",
+        "items": [
+          "Landlord dashboard and property listing/management UI connected to the separate backend API.",
+          "Add/edit property wizard and application review/accept-or-decline interfaces.",
+          "Client-side filtering, confirmation modals and status-driven property cards."
+        ]
+      },
+      {
+        "heading": "Frontend architecture & integrations",
+        "items": [
+          "React Router role-specific journeys, shared layouts and session-aware protected routes.",
+          "Axios integration, response-shape normalization and service/hook patterns for asynchronous data.",
+          "Flutterwave-related payment UI, checkout redirects and callback/status handling in the frontend."
+        ]
       }
     ]
   }
